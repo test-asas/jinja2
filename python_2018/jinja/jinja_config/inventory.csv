@@ -1,0 +1,3 @@
+hostname,platform,site,ipaddr,subnet,username,password,enablepass
+CSR1000v00,CSR1000v,shinagawa,10.0.0.1,255.255.255.0,cisco,cisco,cisco
+CSR1000v10,CSR1000v,yoyogi,10.0.0.2,255.255.255.0,cisco,cisco,cisco

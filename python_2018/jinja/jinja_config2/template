@@ -1,0 +1,17 @@
+
+ip vrf {{ id }}
+!
+int gi1
+no shut
+!
+int gi1.{{ id }}0
+ ip vrf for {{ id }}
+ encap dot1q {{ id }}0
+ ip address {{ intf_ip }} 255.255.255.0
+!
+int lo{{ id }}
+ ip vrf for {{ id }}
+ ip address {{ loop_ip }} 255.255.255.255
+!
+!
+end

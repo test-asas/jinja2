@@ -1,0 +1,11 @@
+hostname {{hostname}}
+!
+enable secret {{enablepass}}
+!
+username {{username}} password 0 {{password}}
+no aaa new-model
+!
+int vlan 1
+ip address {{ipaddr}} {{subnet}}
+!
+end

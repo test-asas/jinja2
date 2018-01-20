@@ -1,0 +1,21 @@
+conf t
+{% for li in li %} {# コメント行 呼び出されたpythonのliの値forする #}
+ip vrf {{ li.id }} {# コメント行 liリスト内のidの値 #}
+{% endfor %}
+!
+int gi1
+no shut
+!
+{% for li in li %} {# コメント行 呼び出されたpythonのliの値forする #}
+int gi1.{{ li.id }}0 {# コメント行 liリスト内のidの値 #}
+ ip vrf for {{ li.id }} {# コメント行 liリスト内のidの値 #}
+ encap dot1q {{ li.id }}0 {# コメント行 liリスト内のidの値 #}
+ ip address {{ li.intf_ip }} 255.255.255.0 {# コメント行 liリスト内のintf_ipの値 #}
+!
+int lo{{ li.id }} {# コメント行 liリスト内のidの値 #}
+ ip vrf for {{ li.id }} {# コメント行 liリスト内のidの値 #}
+ ip address {{ li.loop_ip }} 255.255.255.255 {# コメント行 liリスト内のloop_ipの値 #}
+{% endfor %}
+!
+!
+end
