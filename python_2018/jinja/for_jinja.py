@@ -12,5 +12,5 @@ foods.append({'name':u'焼き飯',   'price':500})
 foods.append({'name':u'天津飯',   'price':600})
 print(foods)
 
-disp_text = tpl.render({'shop':u'悟空軒', 'foods':foods})
+disp_text = tpl.render({'shop':u'悟空軒', 'foods':foods}) #templateに複数の変数の値を入れる場合はこうする
 print(disp_text)
