@@ -23,7 +23,8 @@ interface Loopback{{ li.id }} {# コメント行 liリスト内のidの値 #}
 {% endfor %}
 !
 snmp-server community public RO
-snmp-server host {{ snmp_ip }} public
+snmp-server host {{ snmp_ip }} version 2c public
+snmp-server enable traps
 !
 !
 end

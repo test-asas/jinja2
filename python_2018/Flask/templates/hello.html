@@ -1,5 +1,11 @@
 {% extends "layout.html" %}
 {% block content %}
-<h3>Hello</h3>
-こんにちは。{{ name }}さん
+<h3>一覧</h3>
+<form name="my_form" method="POST">
+<ul>
+{% for member in members %}
+    <li>{{ member.name}} : {{ member.email }}</li>
+{% endfor %}
+</ul>
+</form>
 {% endblock %}

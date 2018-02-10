@@ -13,7 +13,70 @@
     <favorites_list name="python_2018" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="app.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/flask_book/chap7/app.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="40">
+              <caret line="2" column="10" lean-forward="true" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="getapi.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/getapi.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="740">
+              <caret line="41" column="21" lean-forward="true" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="csr1000v-inv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/csr1000v-inv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="zabbix.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/zabbix.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="67" lean-forward="false" selection-start-line="0" selection-start-column="67" selection-end-line="0" selection-end-column="67" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="zabbix-api２.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zabbix-api/zabbix-api２.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-837">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -30,46 +93,16 @@
       <find>x</find>
       <find>CONFIGS_DIR</find>
       <find>keys</find>
+      <find>mem</find>
+      <find>name</find>
+      <find>filename</find>
+      <find>config</find>
+      <find>result_0</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/testxlr.py" />
-        <option value="$PROJECT_DIR$/test.txt" />
-        <option value="$PROJECT_DIR$/testxlr2.py" />
-        <option value="$PROJECT_DIR$/testxlr3.py" />
-        <option value="$PROJECT_DIR$/inv" />
-        <option value="$PROJECT_DIR$/zabbix-api.py" />
-        <option value="$PROJECT_DIR$/zabbix-slack.py" />
-        <option value="$PROJECT_DIR$/管理表-Inventry.py" />
-        <option value="$PROJECT_DIR$/flask.py" />
-        <option value="$PROJECT_DIR$/zabbix-ansible/zabbix-ansible_0114.py" />
-        <option value="$PROJECT_DIR$/zabbix-ansible/GET-API.py" />
-        <option value="$PROJECT_DIR$/GET-API.py" />
-        <option value="$PROJECT_DIR$/zabbix-api２.py" />
-        <option value="$PROJECT_DIR$/getapi.py" />
-        <option value="$PROJECT_DIR$/zabbix-ansible/data.py" />
-        <option value="$PROJECT_DIR$/zabbix-ansible/getapi.py" />
-        <option value="$PROJECT_DIR$/zabbix-ansible/zabbix-ansible/comparison.py" />
-        <option value="$PROJECT_DIR$/zabbix-ansible/zabbix-ansible/data.py" />
-        <option value="$PROJECT_DIR$/zabbix-ansible/zabbix-ansible/getapi.py" />
-        <option value="$PROJECT_DIR$/zabbix-inv.py" />
-        <option value="$PROJECT_DIR$/zabbix-slack2.py" />
-        <option value="$PROJECT_DIR$/ip_addr.py" />
-        <option value="$PROJECT_DIR$/test/data.py" />
-        <option value="$PROJECT_DIR$/test/comparison.py" />
-        <option value="$PROJECT_DIR$/jinja/jinja_1.py" />
-        <option value="$PROJECT_DIR$/jinja/template" />
-        <option value="$PROJECT_DIR$/jinja/sample.tpl" />
-        <option value="$PROJECT_DIR$/jinja/jinja_2.py" />
-        <option value="$PROJECT_DIR$/jinja/intf_config.tpl" />
-        <option value="$PROJECT_DIR$/jinja/jinja_config/config_template.txt" />
-        <option value="$PROJECT_DIR$/jinja/jinja_config/inventory.csv" />
-        <option value="$PROJECT_DIR$/jinja/jinja_config2/template" />
-        <option value="$PROJECT_DIR$/jinja/interface_config.py" />
-        <option value="$PROJECT_DIR$/jinja/jinja_config2/hello.tpl.html" />
-        <option value="$PROJECT_DIR$/jinja/hello.tpl.html" />
         <option value="$PROJECT_DIR$/jinja/for_jinja.tpl" />
         <option value="$PROJECT_DIR$/jinja/jinja_config2/build_config.py" />
         <option value="$PROJECT_DIR$/jinja/jinja_config/build_templates.py" />
@@ -86,6 +119,41 @@
         <option value="$PROJECT_DIR$/test/invfile.py" />
         <option value="$PROJECT_DIR$/test/zabbix.txt" />
         <option value="$PROJECT_DIR$/test/getapi.py" />
+        <option value="$PROJECT_DIR$/jinja/jinja_config3/template2" />
+        <option value="$PROJECT_DIR$/Flask/templates/hello2.html" />
+        <option value="$PROJECT_DIR$/Flask/Flask_mysql.py" />
+        <option value="$PROJECT_DIR$/Flask/hello2.py" />
+        <option value="$PROJECT_DIR$/Flask/hello.py" />
+        <option value="$PROJECT_DIR$/Flask/post.py" />
+        <option value="$PROJECT_DIR$/Flask/templates/hello.html" />
+        <option value="$PROJECT_DIR$/flask_blog/requirements.txt" />
+        <option value="$PROJECT_DIR$/flask_blog/flaskr/manage.py" />
+        <option value="$PROJECT_DIR$/flask_blog/flaskr/__init__.py" />
+        <option value="$PROJECT_DIR$/flask_blog/flaskr/config.py" />
+        <option value="$PROJECT_DIR$/flask_blog/flaskr/models.py" />
+        <option value="$PROJECT_DIR$/flask_blog/manage.py" />
+        <option value="$PROJECT_DIR$/flask_book/index.py" />
+        <option value="$PROJECT_DIR$/flask_book/templates/base.html" />
+        <option value="$PROJECT_DIR$/flask_book/index.html" />
+        <option value="$PROJECT_DIR$/Flask/templates/layout.html" />
+        <option value="$PROJECT_DIR$/flask_book/chap2/templates/base.html" />
+        <option value="$PROJECT_DIR$/flask_book/chap2/templates/index.html" />
+        <option value="$PROJECT_DIR$/flask_book/chap2/index.py" />
+        <option value="$PROJECT_DIR$/flask_book/chap3/templates/index.html" />
+        <option value="$PROJECT_DIR$/flask_book/chap3/templates/hello.html" />
+        <option value="$PROJECT_DIR$/flask_book/chap3/templates/base.html" />
+        <option value="$PROJECT_DIR$/flask_book/chap3/index.py" />
+        <option value="$PROJECT_DIR$/flask_book/chap4/templates/base.html" />
+        <option value="$PROJECT_DIR$/flask_book/chap4/index.py" />
+        <option value="$PROJECT_DIR$/flask_book/chap5/index.py" />
+        <option value="$PROJECT_DIR$/flask_book/chap5/templates/base.html" />
+        <option value="$PROJECT_DIR$/flask_book/chap5-2/index.py" />
+        <option value="$PROJECT_DIR$/flask_book/chap5-3/index.py" />
+        <option value="$PROJECT_DIR$/Flask/chap7/app.py" />
+        <option value="$PROJECT_DIR$/flask_book/chap7/templates/base.html" />
+        <option value="$PROJECT_DIR$/flask_book/chap7/templates/index.html" />
+        <option value="$PROJECT_DIR$/flask_book/chap7/app.py" />
+        <option value="$PROJECT_DIR$/mysql/mysql.py" />
       </list>
     </option>
   </component>
@@ -109,7 +177,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -121,6 +188,122 @@
               <item name="python_2018" type="b2602c69:ProjectViewProjectNode" />
               <item name="python_2018" type="462c0819:PsiDirectoryNode" />
               <item name="Flask" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python_2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_2018" type="462c0819:PsiDirectoryNode" />
+              <item name="Flask" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python_2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_2018" type="462c0819:PsiDirectoryNode" />
+              <item name="flask_book" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python_2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_2018" type="462c0819:PsiDirectoryNode" />
+              <item name="flask_book" type="462c0819:PsiDirectoryNode" />
+              <item name="chap1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python_2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_2018" type="462c0819:PsiDirectoryNode" />
+              <item name="flask_book" type="462c0819:PsiDirectoryNode" />
+              <item name="chap2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python_2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_2018" type="462c0819:PsiDirectoryNode" />
+              <item name="flask_book" type="462c0819:PsiDirectoryNode" />
+              <item name="chap2" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python_2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_2018" type="462c0819:PsiDirectoryNode" />
+              <item name="flask_book" type="462c0819:PsiDirectoryNode" />
+              <item name="chap3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python_2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_2018" type="462c0819:PsiDirectoryNode" />
+              <item name="flask_book" type="462c0819:PsiDirectoryNode" />
+              <item name="chap3" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python_2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_2018" type="462c0819:PsiDirectoryNode" />
+              <item name="flask_book" type="462c0819:PsiDirectoryNode" />
+              <item name="chap5" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python_2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_2018" type="462c0819:PsiDirectoryNode" />
+              <item name="flask_book" type="462c0819:PsiDirectoryNode" />
+              <item name="chap5" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python_2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_2018" type="462c0819:PsiDirectoryNode" />
+              <item name="flask_book" type="462c0819:PsiDirectoryNode" />
+              <item name="chap5" type="462c0819:PsiDirectoryNode" />
+              <item name="uploads" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python_2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_2018" type="462c0819:PsiDirectoryNode" />
+              <item name="flask_book" type="462c0819:PsiDirectoryNode" />
+              <item name="chap5-2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python_2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_2018" type="462c0819:PsiDirectoryNode" />
+              <item name="flask_book" type="462c0819:PsiDirectoryNode" />
+              <item name="chap5-2" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python_2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_2018" type="462c0819:PsiDirectoryNode" />
+              <item name="flask_book" type="462c0819:PsiDirectoryNode" />
+              <item name="chap5-2" type="462c0819:PsiDirectoryNode" />
+              <item name="uploads" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python_2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_2018" type="462c0819:PsiDirectoryNode" />
+              <item name="flask_book" type="462c0819:PsiDirectoryNode" />
+              <item name="chap5-3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python_2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_2018" type="462c0819:PsiDirectoryNode" />
+              <item name="flask_book" type="462c0819:PsiDirectoryNode" />
+              <item name="chap5-3" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python_2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_2018" type="462c0819:PsiDirectoryNode" />
+              <item name="flask_book" type="462c0819:PsiDirectoryNode" />
+              <item name="chap5-3" type="462c0819:PsiDirectoryNode" />
+              <item name="uploads" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python_2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_2018" type="462c0819:PsiDirectoryNode" />
+              <item name="flask_book" type="462c0819:PsiDirectoryNode" />
+              <item name="chap7" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python_2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_2018" type="462c0819:PsiDirectoryNode" />
+              <item name="flask_book" type="462c0819:PsiDirectoryNode" />
+              <item name="chap7" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="python_2018" type="b2602c69:ProjectViewProjectNode" />
@@ -147,6 +330,11 @@
             <path>
               <item name="python_2018" type="b2602c69:ProjectViewProjectNode" />
               <item name="python_2018" type="462c0819:PsiDirectoryNode" />
+              <item name="mysql" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python_2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_2018" type="462c0819:PsiDirectoryNode" />
               <item name="old" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -164,26 +352,27 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.notifications" />
+    <property name="settings.editor.selected.configurable" value="pyconsole" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\kaimo\PycharmProjects\python_2018\jinja\jinja_config3" />
-      <recent name="C:\Users\kaimo\PycharmProjects\python_2018\jinja\jinja_config2" />
-      <recent name="C:\Users\kaimo\PycharmProjects\python_2018\jinja" />
-      <recent name="C:\Users\kaimo\PycharmProjects\python_2018" />
-      <recent name="C:\Users\kaimo\PycharmProjects\python_2018\zabbix-ansible" />
+      <recent name="C:\Users\kaimo\PycharmProjects\python_2018\flask_book\chap7" />
+      <recent name="C:\Users\kaimo\PycharmProjects\python_2018\flask_book\chap5-3" />
+      <recent name="C:\Users\kaimo\PycharmProjects\python_2018\flask_book\chap5-2" />
+      <recent name="C:\Users\kaimo\PycharmProjects\python_2018\flask_book\chap4" />
+      <recent name="C:\Users\kaimo\PycharmProjects\python_2018\flask_book\chap3\templates" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\kaimo\PycharmProjects\python_2018\old" />
-      <recent name="C:\Users\kaimo\PycharmProjects\python_2018\test" />
-      <recent name="C:\Users\kaimo\PycharmProjects\python_2018\Flask\templates" />
-      <recent name="C:\Users\kaimo\PycharmProjects\python_2018\jinja" />
-      <recent name="C:\Users\kaimo\PycharmProjects\python_2018\zabbix-api" />
+      <recent name="C:\Users\kaimo\PycharmProjects\python_2018\flask_book\chap5\update" />
+      <recent name="C:\Users\kaimo\PycharmProjects\python_2018\flask_book\chap5" />
+      <recent name="C:\Users\kaimo\PycharmProjects\python_2018\flask_book\chap2\templates" />
+      <recent name="C:\Users\kaimo\PycharmProjects\python_2018\flask_book\chap2" />
+      <recent name="C:\Users\kaimo\PycharmProjects\python_2018\flask_book\chap1" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -198,92 +387,92 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.getapi">
-    <configuration name="Flask1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.index (5)">
+    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Flask" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/flask_book/chap7" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="python_2018" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Flask/Flask1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/flask_book/chap7/app.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="build_config_main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="index (2)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/jinja/jinja_config3" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/flask_book/chap5-3" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="python_2018" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/jinja/jinja_config3/build_config_main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/flask_book/chap5-3/index.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="getapi" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="index (4)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/flask_book/chap4" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="python_2018" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/getapi.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\kaimo\PycharmProjects\python_2018\flask_book\chap5\index.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="index (5)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/flask_book/chap5" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="python_2018" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/flask_book/chap5/index.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="zabbix-slack2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="index" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/zabbix-api" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/flask_book/chap5-2" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="python_2018" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/zabbix-api/zabbix-slack2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/flask_book/chap5-2/index.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -353,19 +542,19 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.Flask1" />
-      <item index="1" class="java.lang.String" itemvalue="Python.build_config_main" />
-      <item index="2" class="java.lang.String" itemvalue="Python.getapi" />
-      <item index="3" class="java.lang.String" itemvalue="Python.zabbix-slack2" />
-      <item index="4" class="java.lang.String" itemvalue="Python.test" />
+      <item index="0" class="java.lang.String" itemvalue="Python.index (4)" />
+      <item index="1" class="java.lang.String" itemvalue="Python.index (5)" />
+      <item index="2" class="java.lang.String" itemvalue="Python.index" />
+      <item index="3" class="java.lang.String" itemvalue="Python.index (2)" />
+      <item index="4" class="java.lang.String" itemvalue="Python.app" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.getapi" />
-        <item index="1" class="java.lang.String" itemvalue="Python.test" />
-        <item index="2" class="java.lang.String" itemvalue="Python.zabbix-slack2" />
-        <item index="3" class="java.lang.String" itemvalue="Python.Flask1" />
-        <item index="4" class="java.lang.String" itemvalue="Python.build_config_main" />
+        <item index="0" class="java.lang.String" itemvalue="Python.index (5)" />
+        <item index="1" class="java.lang.String" itemvalue="Python.app" />
+        <item index="2" class="java.lang.String" itemvalue="Python.index" />
+        <item index="3" class="java.lang.String" itemvalue="Python.index (2)" />
+        <item index="4" class="java.lang.String" itemvalue="Python.index (4)" />
       </list>
     </recent_temporary>
   </component>
@@ -427,18 +616,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <frame x="-9" y="-9" width="2418" height="1318" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15230037" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12104597" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3538961" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38052094" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27059844" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.49436253" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24960339" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32909605" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3975085" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39637598" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -462,198 +652,15 @@
           <properties exception="BaseException" />
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="43" />
+      <option name="time" value="78" />
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="PythonConfigurationType">
-        <watch expression="iden_v" />
-      </configuration>
-    </watches-manager>
+    <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/zabbix-ansible/zabbix-ansible_0114.py" />
-    <entry file="file://$PROJECT_DIR$/zabbix-ansible/zabbix-ansible/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/old/zabbix-slack.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-200">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zabbix-inv.py" />
-    <entry file="file://$PROJECT_DIR$/csr1000v-inv" />
-    <entry file="file://$PROJECT_DIR$/zabbix.txt" />
-    <entry file="file://$PROJECT_DIR$/ip_addr.py" />
-    <entry file="file://$PROJECT_DIR$/old/zabbix-api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="13" column="67" lean-forward="false" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jinja/template" />
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="1071" column="0" lean-forward="false" selection-start-line="1071" selection-start-column="0" selection-end-line="1071" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zabbix-api/zabbix-api２.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-240">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="308" column="0" lean-forward="false" selection-start-line="308" selection-start-column="0" selection-end-line="308" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jinja/interface_config.py" />
-    <entry file="file://$PROJECT_DIR$/jinja/intf_config.tpl" />
-    <entry file="file://$PROJECT_DIR$/jinja/jinja_1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jinja/hello.tpl.html" />
-    <entry file="file://$PROJECT_DIR$/jinja/sample.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="36" lean-forward="false" selection-start-line="0" selection-start-column="36" selection-end-line="0" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jinja/for_jinja.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="26" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jinja/jinja_2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jinja/jinja_config2/build_config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="23" column="60" lean-forward="false" selection-start-line="23" selection-start-column="60" selection-end-line="23" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jinja/jinja_config/inventory.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="67" lean-forward="false" selection-start-line="2" selection-start-column="67" selection-end-line="2" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jinja/jinja_config/CSR1000v10-config">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jinja/jinja_config/CSR1000v00-config">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jinja/jinja_config2/template">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jinja/jinja_config/config_template.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jinja/for_jinja.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="83" lean-forward="false" selection-start-line="14" selection-start-column="83" selection-end-line="14" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Flask/templates/layout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Flask/templates/hello.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jinja/jinja_config2/template2">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="21" column="43" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="21" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jinja/jinja_config/build_templates.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="16" column="33" lean-forward="true" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jinja/jinja_config2/RT-A.txt" />
-    <entry file="file://$PROJECT_DIR$/jinja/jinja_config3/template2">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jinja/jinja_config2/build_config2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
+        <state relative-caret-position="500">
           <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="28" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jinja/jinja_config3/RT-A.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -664,73 +671,258 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jinja/jinja_config3/__init__.py">
+    <entry file="file://$PROJECT_DIR$/jinja/for_jinja.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="83" lean-forward="false" selection-start-line="14" selection-start-column="83" selection-end-line="14" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/ide/ide-scripting.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Flask/templates/hello2.html" />
+    <entry file="file://$PROJECT_DIR$/Flask/Flask_mysql.py" />
     <entry file="file://$PROJECT_DIR$/jinja/jinja_config3/build_config_main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="22" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+        <state relative-caret-position="419">
+          <caret line="21" column="24" lean-forward="false" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="24" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Flask/hello.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flask/post.py" />
+    <entry file="file://$PROJECT_DIR$/flask_blog/requirements.txt" />
+    <entry file="file://$PROJECT_DIR$/Flask/hello2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flask_blog/flaskr/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/flask_blog/flaskr/models.py" />
+    <entry file="file://$PROJECT_DIR$/flask_blog/manage.py" />
+    <entry file="file://$PROJECT_DIR$/flask_blog/flaskr/config.py" />
     <entry file="file://$PROJECT_DIR$/Flask/Flask1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state relative-caret-position="112">
+          <caret line="7" column="53" lean-forward="false" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="53" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zabbix-api/zabbix-slack2.py">
+    <entry file="file://$PROJECT_DIR$/Flask/templates/layout.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="72" column="17" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="72" selection-end-column="17" />
+        <state relative-caret-position="80">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="6" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zabbix-api/csr1000v-inv">
+    <entry file="file://$PROJECT_DIR$/Flask/templates/hello.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flask_book/chap1/index.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" column="16" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flask_book/chap2/index.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flask_book/chap5/update/uploadsダウンロード.jpg" />
+    <entry file="file://$PROJECT_DIR$/flask_book/chap5-2/uploads/ダウンロード.jpg" />
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="1071" column="0" lean-forward="false" selection-start-line="1071" selection-start-column="0" selection-end-line="1071" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flask_book/chap5-3/uploads/j.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flask_book/chap5-3/index.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="13" column="14" lean-forward="true" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flask_book/chap5/uploads/ダウンロード.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flask_book/chap5-2/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="34" lean-forward="true" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/old/data.py">
+    <entry file="file://$PROJECT_DIR$/flask_book/chap5-2/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/old/comparison.py">
+    <entry file="file://$PROJECT_DIR$/Flask/chap7/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="15" lean-forward="true" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flask_book/chap2/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="23" selection-end-column="17" />
+          <caret line="0" column="16" lean-forward="false" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/old/invfile.py">
+    <entry file="file://$PROJECT_DIR$/flask_book/chap2/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="43" column="19" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+        <state relative-caret-position="220">
+          <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/zabbix.txt">
+    <entry file="file://$PROJECT_DIR$/flask_book/chap5-2/index.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="620">
+          <caret line="31" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jinja/jinja_config3/template2">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="580">
+          <caret line="29" column="3" lean-forward="true" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flask_book/chap7/test.db">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="67" lean-forward="false" selection-start-line="0" selection-start-column="67" selection-end-line="0" selection-end-column="67" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysql/mysql.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="9" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flask_book/chap7/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flask_book/chap7/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flask_book/chap3/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flask_book/chap3/templates/hello.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flask_book/chap3/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flask_book/chap5/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="13" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flask_book/chap5/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="16" lean-forward="false" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flask_book/chap5/index.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="17" column="24" lean-forward="true" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flask_book/chap3/index.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flask_book/chap7/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="10" lean-forward="true" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -738,27 +930,41 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ipアドレス表-inventry/管理表-Inventry.py">
+    <entry file="file://$PROJECT_DIR$/test/zabbix.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="67" lean-forward="false" selection-start-line="0" selection-start-column="67" selection-end-line="0" selection-end-column="67" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ipアドレス表-inventry/inv">
+    <entry file="file://$PROJECT_DIR$/zabbix-api/zabbix-api２.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        <state relative-caret-position="-837">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/getapi.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="36" lean-forward="false" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+        <state relative-caret-position="740">
+          <caret line="41" column="21" lean-forward="true" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
