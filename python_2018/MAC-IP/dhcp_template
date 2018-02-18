@@ -1,0 +1,8 @@
+
+host R{{ rtnum }}{
+ hardware ethernet {{ ifmac }};
+ fixed-address {{ mgmtip }};
+ option subnet-mask 255.255.255.0;
+ option tftp-server-name "10.0.0.200";
+ filename "ssh_conf_R{{ rtnum }}";
+}

@@ -158,7 +158,8 @@ interface Loopback10
 
 !
 snmp-server community public RO
-snmp-server host 10.0.0.220 public
+snmp-server host 10.0.0.220 version 2c public
+snmp-server enable traps
 !
 !
 end

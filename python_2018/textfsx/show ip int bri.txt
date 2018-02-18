@@ -1,0 +1,5 @@
+ztd-rt#show ip int bri
+Interface              IP-Address      OK? Method Status                Protocol
+GigabitEthernet1       unassigned      YES unset  administratively down down
+GigabitEthernet2       unassigned      YES unset  administratively down down
+GigabitEthernet3       10.0.0.100      YES DHCP   up                    up  

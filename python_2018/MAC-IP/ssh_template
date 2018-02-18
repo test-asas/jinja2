@@ -1,0 +1,23 @@
+
+hostname R{{ rtnum }}
+!
+enable secret 5 $1$q/6Y$YmynQO8Tgl26ZFoUgbPhn1
+!
+ip domain name cisco.com
+!
+username cisco password 0 cisco
+!
+crypto key generate rsa modulus 1024
+!
+interface GigabitEthernet3
+ ip address dhcp
+ negotiation auto
+ no shutdown
+!
+ip ssh version 2
+!
+line vty 0 4
+ login local
+ transport input all
+!
+!

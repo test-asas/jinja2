@@ -18,6 +18,7 @@ for iden,intf,loop in zip(inv.iden_v,inv.intf_v,inv.loop_v):
     iden_dict[inv.loop_k] = loop #iden_dictにkey loop_k、vaule loop_vを追加
     li.append(iden_dict) #リストにiden_dictを追加。この状態でjinjaテンプレートの変数値として利用可能になる
 
+print (li)
 #template内の変数値にdataの内容を出力
 output = template.render({'hostname': inv.host, 'li': li, 'snmp_ip':inv.snmp_ip })
 #print(output)
