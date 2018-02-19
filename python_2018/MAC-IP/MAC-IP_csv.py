@@ -9,7 +9,7 @@ mac_none = mac_cisco.replace(".", "")
 
 mac_linux = ':'.join(map(''.join, zip(*[iter(mac_none)]*2)))
 
-#print(mac_linux)
+print(mac_linux)
 
 num_lines = len(open('invfile.csv').readlines())
 
@@ -21,7 +21,7 @@ num_lines = len(open('invfile.csv').readlines())
 #    if n == num_lines:
 #        print('ok')
 
-ID = num_lines+1
+ID = num_lines+100
 IPADDR = '10.0.0.'+str(ID)
 
 ToCSV = [ID, mac_linux, IPADDR]
@@ -32,11 +32,8 @@ ToCSV = [ID, mac_linux, IPADDR]
 x = []
 
 f = open('invfile.csv')
-
-
 for i in f:
     x.append(i)
-
 f.close()
 
 if x == []:
@@ -44,10 +41,10 @@ if x == []:
         writer = csv.writer(f)
         writer.writerow(ToCSV)
 
-print(x)
+print(str(x))
 
 if x != []:
-    if mac_linux not in x[0]:
+    if mac_linux not in str(x):
         with open('invfile.csv','a',newline='') as f:
             writer = csv.writer(f)
             writer.writerow(ToCSV)

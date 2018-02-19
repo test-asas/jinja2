@@ -14,34 +14,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="build_config_main.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/jinja/jinja_config3/build_config_main.py">
+      <file leaf-file-name="MAC-IP_csv.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MAC-IP/MAC-IP_csv.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            <state relative-caret-position="267">
+              <caret line="23" column="18" lean-forward="false" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
               <folding>
-                <element signature="e#0#58#0" expanded="true" />
+                <element signature="e#0#10#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dhcp_conf_20180219-0220" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MAC-IP/dhcp_conf_20180219-0220">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="inv.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jinja/jinja_config3/inv.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -119,13 +99,13 @@
         <option value="$PROJECT_DIR$/MAC-IP/ssh_template" />
         <option value="$PROJECT_DIR$/MAC-IP/dhcp_conf.py" />
         <option value="$PROJECT_DIR$/MAC-IP/dhcp_template" />
-        <option value="$PROJECT_DIR$/MAC-IP/invfile.csv" />
-        <option value="$PROJECT_DIR$/MAC-IP/MAC-IP_csv.py" />
         <option value="$PROJECT_DIR$/MAC-IP/thinter.py" />
         <option value="$PROJECT_DIR$/zabbix-inv/getapi.py" />
         <option value="$PROJECT_DIR$/textfsx/textfsm1.py" />
         <option value="$PROJECT_DIR$/MAC-IP/conf.py" />
         <option value="$PROJECT_DIR$/jinja/jinja_config3/build_config_main.py" />
+        <option value="$PROJECT_DIR$/MAC-IP/MAC-IP_csv.py" />
+        <option value="$PROJECT_DIR$/MAC-IP/invfile.csv" />
       </list>
     </option>
   </component>
@@ -150,6 +130,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -341,7 +322,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -349,19 +329,19 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\kaimo\PycharmProjects\python_2018\old" />
-      <recent name="C:\Users\kaimo\PycharmProjects\python_2018\flask_book\chap5\update" />
-      <recent name="C:\Users\kaimo\PycharmProjects\python_2018\flask_book\chap5" />
-      <recent name="C:\Users\kaimo\PycharmProjects\python_2018\flask_book\chap2\templates" />
-      <recent name="C:\Users\kaimo\PycharmProjects\python_2018\flask_book\chap2" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\kaimo\PycharmProjects\python_2018\MAC-IP" />
       <recent name="C:\Users\kaimo\PycharmProjects\python_2018\textfsx" />
       <recent name="C:\Users\kaimo\PycharmProjects\python_2018\flask_book\chap7" />
       <recent name="C:\Users\kaimo\PycharmProjects\python_2018\flask_book\chap5-3" />
       <recent name="C:\Users\kaimo\PycharmProjects\python_2018\flask_book\chap5-2" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\kaimo\PycharmProjects\python_2018\old" />
+      <recent name="C:\Users\kaimo\PycharmProjects\python_2018\flask_book\chap5\update" />
+      <recent name="C:\Users\kaimo\PycharmProjects\python_2018\flask_book\chap5" />
+      <recent name="C:\Users\kaimo\PycharmProjects\python_2018\flask_book\chap2\templates" />
+      <recent name="C:\Users\kaimo\PycharmProjects\python_2018\flask_book\chap2" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -611,7 +591,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26623377" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26539463" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39895925" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24960339" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -776,13 +756,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MAC-IP/thinter.py" />
-    <entry file="file://$PROJECT_DIR$/MAC-IP/MAC-IP_csv.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/zabbix-api/zabbix-slack2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -826,13 +799,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/textfsx/inventory.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MAC-IP/invfile.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -893,7 +859,7 @@
     <entry file="file://$PROJECT_DIR$/MAC-IP/dhcp_conf_20180219-0220">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
-          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+          <caret line="7" column="1" lean-forward="false" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -904,6 +870,24 @@
           <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding>
             <element signature="e#0#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MAC-IP/invfile.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MAC-IP/MAC-IP_csv.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="23" column="18" lean-forward="false" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
