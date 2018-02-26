@@ -1,0 +1,854 @@
+#初期設定
+IR800>en
+IR800#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+IR800(config)#
+IR800(config)#
+IR800(config)#controller Cellular 0
+IR800(config-controller)# lte sim data-profile 2 attach-profile 2 slot 0
+
+Note: Please issue a modem reset for the modified attach-profile to take effect.
+
+IR800(config-controller)#controller Cellular 0
+IR800(config-controller)# lte sim data-profile 2 attach-profile 2 slot 0
+IR800(config-controller)#
+IR800(config-controller)#
+IR800(config-controller)# lte failovertimer 5
+IR800(config-controller)# lte modem link-recovery disable
+IR800(config-controller)#
+IR800(config-controller)#interface Cellular0
+IR800(config-if)# ip address negotiated previous
+IR800(config-if)# ip mtu 1440
+IR800(config-if)# ip virtual-reassembly in
+IR800(config-if)# encapsulation slip
+IR800(config-if)# ip tcp adjust-mss 1400
+IR800(config-if)# dialer in-band
+IR800(config-if)# dialer idle-timeout 0
+IR800(config-if)# dialer string lte
+IR800(config-if)# dialer-group 1
+IR800(config-if)# no peer default ip address
+IR800(config-if)# ipv6 address autoconfig
+IR800(config-if)# async mode interactive
+IR800(config-if)# routing dynamic
+IR800(config-if)# hold-queue 256 in
+IR800(config-if)# hold-queue 256 out
+IR800(config-if)#
+IR800(config-if)#ip route 0.0.0.0 0.0.0.0 Cellular0
+IR800(config)#
+IR800(config)#dialer-list 1 protocol ip permit
+IR800(config)#
+IR800(config)#
+IR800(config)#end
+IR800#
+*Feb 26 12:31:25.709: %SYS-5-CONFIG_I: Configured from console by console
+IR800#
+IR800#
+IR800#
+
+#しばらくたってから、PNPコンフィグ投入
+IR800#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+IR800(config)#
+IR800(config)#
+IR800(config)#pnp profile network-pnp
+IR800(config-pnp-init)# transport http ipv4 211.128.103.213 port 80
+IR800(config-pnp-init)#end
+IR800#
+
+#設定投入後Establishedに
+IR800#show pnp profile
+PnP Profiles: Active:1, Created:1, Deleted:0, Hidden:0
+
+Name            CBType Node     Primary-Path           Primary-Trans  Backup-Trans
+network-pnp     User   visible  pnp/WORK-REQUEST       HTTP           none      
+
+
+Initiator Profile network-pnp: 1 open connections: 0 closing connections
+        Encap: pnp
+        WSSE header is not required. Configured authorization level is 1
+        SID:[-], LastSID:[-], ChangedCount:0, SIDAuthOnly:No, MustValidate:No, MustRenew:No
+        Work-Request Tracking: Validation Yes, Total 1, SID=[-], Violation 0, PSR 0, PSB 0
+                Pending-WR: X/M/R=0/0/0, UDI=[PID:IR829GW-LTE-LA-QK9,VID:V02,SN:FGL213893GW], SID=[-], Correlator=[CiscoPnP-1.0-1-14-12C9C7B4-2]
+        PnP Request Tracking: Current:[-], Last:[-], First:[-]
+                Total:0, OK:0, Failed:0, LastFailed:[-]
+        PnP Response Tracking: Retry-Allowed 0, Total 0
+        PnP Backoff Time Tracking: Default 60, Current 0, Last 0, First:0, OK:0, Failed:0
+        Countdown: Security Unlock: S=1/F=0/T=3534, Service Lock: S=0/F=0/T=0, Service Req Wait: S=0/F=0/T=54, Prxoy Req Wait S=1/F=0/T=55, Service Resp Ack: S=0/F=0/T=0
+        Max message (RX) is 50 Kbytes
+        XEP Faults are sent
+        Idle timeout infinite
+        Keepalive not configured
+        Reconnect time 60 seconds
+        Primary Transport:http to Host:-, IP:211.128.103.213, Port:80, Src-Intf:-, VRF:-, URL pnp/WORK-REQUEST
+  Connected to the primary transport via http
+
+  Remote connection via HTTP client.  URL http://211.128.103.213:80/pnp/WORK-REQUEST, post
+  Established at *12:35:37.233 UTC Mon Feb 26 2018
+         Tx 502 bytes (1 msg), Tx 0 errors,
+         Last message sent at *12:35:37.235 UTC Mon Feb 26 2018
+         Rx 0 bytes (0 msg), 0 empty msg
+         Last message received at never
+
+Statistics for profile network-pnp
+        incoming total 0, bad XML 0, authentication errors 0, oversized 0
+        outgoing total 1, absorbed 0
+        message internal errors 0
+  Connection Accepts 1, local hangup 0, remote hangup 0, keepalive hangup 0
+        session internal errors 0, continuous faults 0, total faults 0
+
+IR800#
+*Feb 26 12:35:59.319: %IPV6_INTF-4-L2_MISMATCH: High load on interface events (Cellular0), auto-recovery complete.
+IR800#
+IR800#show pnp profile
+PnP Profiles: Active:1, Created:1, Deleted:0, Hidden:0
+
+Name            CBType Node     Primary-Path           Primary-Trans  Backup-Trans
+network-pnp     User   visible  pnp/WORK-REQUEST       HTTP           none      
+
+
+Initiator Profile network-pnp: 1 open connections: 0 closing connections
+        Encap: pnp
+        WSSE header is not required. Configured authorization level is 1
+        SID:[-], LastSID:[-], ChangedCount:0, SIDAuthOnly:No, MustValidate:No, MustRenew:No
+        Work-Request Tracking: Validation Yes, Total 2, SID=[-], Violation 0, PSR 0, PSB 0
+                Pending-WR: X/M/R=0/0/1, UDI=[PID:IR829GW-LTE-LA-QK9,VID:V02,SN:FGL213893GW], SID=[-], Correlator=[CiscoPnP-1.0-1-14-12C9C7B4-2]
+        PnP Request Tracking: Current:[-], Last:[-], First:[-]
+                Total:0, OK:0, Failed:0, LastFailed:[-]
+        PnP Response Tracking: Retry-Allowed 0, Total 0
+        PnP Backoff Time Tracking: Default 60, Current 0, Last 0, First:0, OK:0, Failed:0
+        Countdown: Security Unlock: S=1/F=0/T=3452, Service Lock: S=0/F=0/T=0, Service Req Wait: S=0/F=0/T=52, Prxoy Req Wait S=2/F=0/T=53, Service Resp Ack: S=0/F=0/T=0
+        Max message (RX) is 50 Kbytes
+        XEP Faults are sent
+        Idle timeout infinite
+        Keepalive not configured
+        Reconnect time 60 seconds
+        Primary Transport:http to Host:-, IP:211.128.103.213, Port:80, Src-Intf:-, VRF:-, URL pnp/WORK-REQUEST
+  Connected to the primary transport via http
+
+  Remote connection via HTTP client.  URL http://211.128.103.213:80/pnp/WORK-REQUEST, post
+  Established at *12:36:57.235 UTC Mon Feb 26 2018
+         Tx 502 bytes (1 msg), Tx 0 errors,
+         Last message sent at *12:36:57.235 UTC Mon Feb 26 2018
+         Rx 0 bytes (0 msg), 0 empty msg
+         Last message received at never
+
+Statistics for profile network-pnp
+        incoming total 0, bad XML 0, authentication errors 0, oversized 0
+        outgoing total 2, absorbed 0
+        message internal errors 0
+  Connection Accepts 2, local hangup 0, remote hangup 1, keepalive hangup 0
+        session internal errors 0, continuous faults 0, total faults 0
+
+IR800#
+
+#Connection Accepts3回目でNot Connect
+IR800#show pnp profile
+PnP Profiles: Active:1, Created:1, Deleted:0, Hidden:0
+
+Name            CBType Node     Primary-Path           Primary-Trans  Backup-Trans
+network-pnp     User   visible  pnp/WORK-REQUEST       HTTP           none      
+
+
+Initiator Profile network-pnp: 0 open connections: 0 closing connections
+        Encap: pnp
+        WSSE header is not required. Configured authorization level is 1
+        SID:[-], LastSID:[-], ChangedCount:0, SIDAuthOnly:No, MustValidate:No, MustRenew:No
+        Work-Request Tracking: Validation Yes, Total 2, SID=[-], Violation 0, PSR 0, PSB 0
+                Pending-WR: X/M/R=0/0/1, UDI=[PID:IR829GW-LTE-LA-QK9,VID:V02,SN:FGL213893GW], SID=[-], Correlator=[CiscoPnP-1.0-1-14-12C9C7B4-2]
+        PnP Request Tracking: Current:[-], Last:[-], First:[-]
+                Total:0, OK:0, Failed:0, LastFailed:[-]
+        PnP Response Tracking: Retry-Allowed 0, Total 0
+        PnP Backoff Time Tracking: Default 60, Current 0, Last 0, First:0, OK:0, Failed:0
+        Countdown: Security Unlock: S=1/F=0/T=3412, Service Lock: S=0/F=0/T=0, Service Req Wait: S=0/F=0/T=12, Prxoy Req Wait S=2/F=0/T=13, Service Resp Ack: S=0/F=0/T=0
+        Max message (RX) is 50 Kbytes
+        XEP Faults are sent
+        Idle timeout infinite
+        Keepalive not configured
+        Reconnect time 60 seconds
+        Primary Transport:http to Host:-, IP:211.128.103.213, Port:80, Src-Intf:-, VRF:-, URL pnp/WORK-REQUEST
+  Not connected, next reconnect attempt in 32 seconds
+
+Statistics for profile network-pnp
+        incoming total 0, bad XML 0, authentication errors 0, oversized 0
+        outgoing total 2, absorbed 0
+        message internal errors 0
+  Connection Accepts 2, local hangup 0, remote hangup 2, keepalive hangup 0
+        session internal errors 0, continuous faults 0, total faults 0
+
+IR800#
+IR800#show pnp profile
+PnP Profiles: Active:1, Created:1, Deleted:0, Hidden:0
+
+Name            CBType Node     Primary-Path           Primary-Trans  Backup-Trans
+network-pnp     User   visible  pnp/WORK-REQUEST       HTTP           none      
+
+
+Initiator Profile network-pnp: 0 open connections: 0 closing connections
+        Encap: pnp
+        WSSE header is not required. Configured authorization level is 1
+        SID:[-], LastSID:[-], ChangedCount:0, SIDAuthOnly:No, MustValidate:No, MustRenew:No
+        Work-Request Tracking: Validation Yes, Total 2, SID=[-], Violation 0, PSR 0, PSB 0
+                Pending-WR: X/M/R=0/0/1, UDI=[PID:IR829GW-LTE-LA-QK9,VID:V02,SN:FGL213893GW], SID=[-], Correlator=[CiscoPnP-1.0-1-14-12C9C7B4-2]
+        PnP Request Tracking: Current:[-], Last:[-], First:[-]
+                Total:0, OK:0, Failed:0, LastFailed:[-]
+        PnP Response Tracking: Retry-Allowed 0, Total 0
+        PnP Backoff Time Tracking: Default 60, Current 0, Last 0, First:0, OK:0, Failed:0
+        Countdown: Security Unlock: S=1/F=0/T=3394, Service Lock: S=0/F=0/T=0, Service Req Wait: S=0/F=0/T=0, Prxoy Req Wait S=2/F=0/T=0, Service Resp Ack: S=0/F=0/T=0
+        Max message (RX) is 50 Kbytes
+        XEP Faults are sent
+        Idle timeout infinite
+        Keepalive not configured
+        Reconnect time 60 seconds
+        Primary Transport:http to Host:-, IP:211.128.103.213, Port:80, Src-Intf:-, VRF:-, URL pnp/WORK-REQUEST
+  Not connected, next reconnect attempt in 14 seconds
+
+Statistics for profile network-pnp
+        incoming total 0, bad XML 0, authentication errors 0, oversized 0
+        outgoing total 2, absorbed 0
+        message internal errors 0
+  Connection Accepts 2, local hangup 0, remote hangup 2, keepalive hangup 0
+        session internal errors 0, continuous faults 0, total faults 0
+
+IR800#
+IR800#
+IR800#
+IR800#sh run
+Building configuration...
+
+Current configuration : 2851 bytes
+!
+! Last configuration change at 12:35:39 UTC Mon Feb 26 2018
+!
+version 15.7
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname IR800
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+service-module wlan-ap 0 bootimage autonomous
+!
+ignition off-timer 900
+!
+ignition undervoltage threshold 11
+!
+no ignition enable
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+
+
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+multilink bundle-name authenticated
+!
+!
+!
+chat-script lte "" "AT!CALL" TIMEOUT 20 "OK"
+!
+!
+license udi pid IR829GW-LTE-LA-QK9 sn FGL213893GW
+license boot module ir800 technology-package datak9
+!
+!
+vtp mode transparent
+!
+redundancy
+!
+!
+!
+!
+!
+controller Cellular 0
+ lte sim data-profile 2 attach-profile 2 slot 0
+ lte failovertimer 5
+ lte modem link-recovery disable
+!
+vlan 20,100
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface GigabitEthernet0
+ no ip address
+ shutdown
+!
+interface GigabitEthernet1
+ no ip address
+!
+interface GigabitEthernet2
+ no ip address
+!
+interface GigabitEthernet3
+ no ip address
+!
+interface GigabitEthernet4
+ no ip address
+!
+interface Wlan-GigabitEthernet0
+ no ip address
+!
+interface GigabitEthernet5
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+!
+interface Cellular0
+ ip address negotiated previous
+ ip mtu 1440
+ ip virtual-reassembly in
+ encapsulation slip
+ ip tcp adjust-mss 1400
+ dialer in-band
+ dialer idle-timeout 0
+ dialer string lte
+ dialer-group 1
+ no peer default ip address
+ ipv6 address autoconfig
+ async mode interactive
+ routing dynamic
+ hold-queue 256 in
+ hold-queue 256 out
+!
+interface Cellular1
+ no ip address
+ encapsulation slip
+!
+interface wlan-ap0
+ no ip address
+ shutdown
+!
+interface Vlan1
+ no ip address
+!
+interface Async0
+ no ip address
+ encapsulation scada
+!
+interface Async1
+ no ip address
+ encapsulation scada
+!
+!
+ip forward-protocol nd
+!
+no ip http server
+no ip http secure-server
+!
+ip route 0.0.0.0 0.0.0.0 Cellular0
+!
+dialer-list 1 protocol ip permit
+dialer-list 1 protocol ipv6 permit
+ipv6 ioam timestamp
+!
+!
+!
+control-plane
+!
+!
+!
+ vstack
+!
+line con 0
+ stopbits 1
+line 1 2
+ stopbits 1
+line 3
+ script dialer lte
+ no exec
+ transport preferred lat pad telnet rlogin lapb-ta mop udptn v120 ssh
+ transport output lat pad telnet rlogin lapb-ta mop udptn v120 ssh
+line 4
+ no activation-character
+ no exec
+ transport preferred none
+ transport input all
+ transport output lat pad telnet rlogin lapb-ta mop udptn v120 ssh
+line 8
+ no exec
+ transport preferred lat pad telnet rlogin lapb-ta mop udptn v120 ssh
+ transport output lat pad telnet rlogin lapb-ta mop udptn v120 ssh
+line 1/3 1/6
+ transport preferred none
+ transport output none
+ stopbits 1
+line vty 0 4
+ login
+ transport input none
+!
+no scheduler max-task-time
+iox client enable interface GigabitEthernet5
+no iox recovery-enable
+!
+!
+!
+!
+!
+!
+!
+pnp profile network-pnp
+ transport http ipv4 211.128.103.213 port 80
+end
+
+IR800#$
+IR800#show pnp profile
+PnP Profiles: Active:1, Created:1, Deleted:0, Hidden:0
+
+Name            CBType Node     Primary-Path           Primary-Trans  Backup-Trans
+network-pnp     User   visible  pnp/WORK-REQUEST       HTTP           none      
+
+
+Initiator Profile network-pnp: 0 open connections: 0 closing connections
+        Encap: pnp
+        WSSE header is not required. Configured authorization level is 1
+        SID:[-], LastSID:[-], ChangedCount:0, SIDAuthOnly:No, MustValidate:No, MustRenew:No
+        Work-Request Tracking: Validation Yes, Total 2, SID=[-], Violation 0, PSR 0, PSB 0
+                Pending-WR: X/M/R=0/0/1, UDI=[PID:IR829GW-LTE-LA-QK9,VID:V02,SN:FGL213893GW], SID=[-], Correlator=[CiscoPnP-1.0-1-14-12C9C7B4-2]
+        PnP Request Tracking: Current:[-], Last:[-], First:[-]
+                Total:0, OK:0, Failed:0, LastFailed:[-]
+        PnP Response Tracking: Retry-Allowed 0, Total 0
+        PnP Backoff Time Tracking: Default 60, Current 0, Last 0, First:0, OK:0, Failed:0
+        Countdown: Security Unlock: S=1/F=0/T=3380, Service Lock: S=0/F=0/T=0, Service Req Wait: S=0/F=0/T=0, Prxoy Req Wait S=2/F=0/T=0, Service Resp Ack: S=0/F=0/T=0
+        Max message (RX) is 50 Kbytes
+        XEP Faults are sent
+        Idle timeout infinite
+        Keepalive not configured
+        Reconnect time 60 seconds
+        Primary Transport:http to Host:-, IP:211.128.103.213, Port:80, Src-Intf:-, VRF:-, URL pnp/WORK-REQUEST
+  Not connected, next reconnect attempt in 0 seconds
+
+Statistics for profile network-pnp
+        incoming total 0, bad XML 0, authentication errors 0, oversized 0
+        outgoing total 2, absorbed 0
+        message internal errors 0
+  Connection Accepts 2, local hangup 0, remote hangup 2, keepalive hangup 0
+        session internal errors 0, continuous faults 0, total faults 0
+
+IR800#
+IR800#
+IR800#show pnp profile
+PnP Profiles: Active:1, Created:1, Deleted:0, Hidden:0
+
+Name            CBType Node     Primary-Path           Primary-Trans  Backup-Trans
+network-pnp     User   visible  pnp/WORK-REQUEST       HTTP           none      
+
+
+Initiator Profile network-pnp: 1 open connections: 0 closing connections
+        Encap: pnp
+        WSSE header is not required. Configured authorization level is 1
+        SID:[-], LastSID:[-], ChangedCount:0, SIDAuthOnly:No, MustValidate:No, MustRenew:No
+        Work-Request Tracking: Validation Yes, Total 3, SID=[-], Violation 0, PSR 0, PSB 0
+                Pending-WR: X/M/R=0/0/2, UDI=[PID:IR829GW-LTE-LA-QK9,VID:V02,SN:FGL213893GW], SID=[-], Correlator=[CiscoPnP-1.0-1-14-12C9C7B4-2]
+        PnP Request Tracking: Current:[-], Last:[-], First:[-]
+                Total:0, OK:0, Failed:0, LastFailed:[-]
+        PnP Response Tracking: Retry-Allowed 0, Total 0
+        PnP Backoff Time Tracking: Default 60, Current 0, Last 0, First:0, OK:0, Failed:0
+        Countdown: Security Unlock: S=1/F=0/T=3375, Service Lock: S=0/F=0/T=0, Service Req Wait: S=0/F=0/T=55, Prxoy Req Wait S=3/F=0/T=56, Service Resp Ack: S=0/F=0/T=0
+        Max message (RX) is 50 Kbytes
+        XEP Faults are sent
+        Idle timeout infinite
+        Keepalive not configured
+        Reconnect time 60 seconds
+        Primary Transport:http to Host:-, IP:211.128.103.213, Port:80, Src-Intf:-, VRF:-, URL pnp/WORK-REQUEST
+  Connected to the primary transport via http
+
+  Remote connection via HTTP client.  URL http://211.128.103.213:80/pnp/WORK-REQUEST, post
+  Established at *12:38:17.235 UTC Mon Feb 26 2018
+         Tx 502 bytes (1 msg), Tx 0 errors,
+         Last message sent at *12:38:17.235 UTC Mon Feb 26 2018
+         Rx 0 bytes (0 msg), 0 empty msg
+         Last message received at never
+
+Statistics for profile network-pnp
+        incoming total 0, bad XML 0, authentication errors 0, oversized 0
+        outgoing total 3, absorbed 0
+        message internal errors 0
+  Connection Accepts 3, local hangup 0, remote hangup 2, keepalive hangup 0
+        session internal errors 0, continuous faults 0, total faults 0
+
+IR800#
+IR800#
+IR800#show pnp profile
+PnP Profiles: Active:1, Created:1, Deleted:0, Hidden:0
+
+Name            CBType Node     Primary-Path           Primary-Trans  Backup-Trans
+network-pnp     User   visible  pnp/WORK-REQUEST       HTTP           none      
+
+
+Initiator Profile network-pnp: 0 open connections: 0 closing connections
+        Encap: pnp
+        WSSE header is not required. Configured authorization level is 1
+        SID:[-], LastSID:[-], ChangedCount:0, SIDAuthOnly:No, MustValidate:No, MustRenew:No
+        Work-Request Tracking: Validation Yes, Total 3, SID=[-], Violation 0, PSR 0, PSB 0
+                Pending-WR: X/M/R=0/0/2, UDI=[PID:IR829GW-LTE-LA-QK9,VID:V02,SN:FGL213893GW], SID=[-], Correlator=[CiscoPnP-1.0-1-14-12C9C7B4-2]
+        PnP Request Tracking: Current:[-], Last:[-], First:[-]
+                Total:0, OK:0, Failed:0, LastFailed:[-]
+        PnP Response Tracking: Retry-Allowed 0, Total 0
+        PnP Backoff Time Tracking: Default 60, Current 0, Last 0, First:0, OK:0, Failed:0
+        Countdown: Security Unlock: S=1/F=0/T=3317, Service Lock: S=0/F=0/T=0, Service Req Wait: S=0/F=0/T=0, Prxoy Req Wait S=3/F=0/T=0, Service Resp Ack: S=0/F=0/T=0
+        Max message (RX) is 50 Kbytes
+        XEP Faults are sent
+        Idle timeout infinite
+        Keepalive not configured
+        Reconnect time 60 seconds
+        Primary Transport:http to Host:-, IP:211.128.103.213, Port:80, Src-Intf:-, VRF:-, URL pnp/WORK-REQUEST
+  Not connected, next reconnect attempt in 17 seconds
+
+Statistics for profile network-pnp
+        incoming total 0, bad XML 0, authentication errors 0, oversized 0
+        outgoing total 3, absorbed 0
+        message internal errors 0
+  Connection Accepts 3, local hangup 0, remote hangup 3, keepalive hangup 0
+        session internal errors 0, continuous faults 0, total faults 0
+
+IR800#
+IR800#
+IR800#wri
+Building configuration...
+[OK]
+IR800#
+IR800#
+IR800#
+
+#どうにもならずReload
+IR800#relo
+IR800#reload
+
+Do you want to reload the internal AP ? [yes/no]: no
+Proceed with reload? [confirm]
+Starting File System integrity check
+NOTE: File System will be deinited and later rebuilt
+
+Starting partition 0 Analysis
+        Boot Sector/Boot Parameter Block check ...[Passed]
+        DIB not present
+        DIB & Monlib check ...[Passed]
+        Partition Init check ...[Passed]
+        Directory entries check ...[Passed]
+Starting File System integrity check
+NOTE: File System will be deinited and later rebuilt
+
+Starting partition 0 Analysis
+        Boot Sector/Boot Parameter Block check ...[Passed]
+        DIB not present
+        DIB & Monlib check ...[Passed]
+        Partition Init check ...[Passed]
+        Directory entries check ...[Passed]
+*Feb 26 12:39:31.741: %SYS-5-RELOAD: Reload requested by console. Reload Reason: Reload Command.
+*Feb 26 12:39:37.263: %CELLWAN-2-BEARER_UP: Instance id=0, Default bearer (bearer_id=5) in Cellular0 is now UP
+*Feb 26 12:39:39.541: %LINK-3-UPDOWN: Interface Cellular0, changed state to up
+*Feb 26 12:39:40.549: %LINEPROTO-5-UPDOWN: Line protocol on Interface Cellular0, changed state to up
+*Feb 26 12:32:53.000: %SYS-6-CLOCKUPDATE: System clock has been updated from 12:40:03 UTC Mon Feb 26 2018 to 12:32:53 UTC Mon Feb 26 2018, configured from console by vty1.
+Powering down cellular modem, please wait...
+Feb 26 12:32:59.717: %CELLWAN-2-BEARER_DELETED: Instance id=0, Default bearer (bearer_id=5) in Cellular0 is now deleted.
+Feb 26 12:33:01.717: %LINK-5-CHANGED: Interface Cellular0, changed state to reset
+Feb 26 12:33:02.717: %LINEPROTO-5-UPDOWN: Line protocol on Interface Cellular0, changed state to down
+Feb 26 12:33:05.873: CELLULAR: modem in slot 1 powered down
+
+Feb 26 12:33:06.717: %LINK-3-UPDOWN: Interface Cellular0, changed state to down
+Feb 26 12:33:09.627: %CELLULAR-2-MODEM_DOWN: Cellular0 modem is now DOWN.
+IR829 Loader Stage 1 Version 1.8
+
+FPGA version 0x20700 built 2017-6-21
+Booted from the upgrade FPGA; SecureBoot did not fallback
+Reset reason: reload
+BIOS Platform: IR800
+BIOS Version: 16
+SecureBoot core version: F01047X15.01ada48ab2015-04-03
+Microloader version: MA0061R06.0404022015
+Booted from the upgrade BIOS
+
+
+Config reg configured to Autoboot
+BOOT variable not configured. Booting first bootable IOS image from list: ir800-universalk9-mz.SPA.157-3.M1,12;
+Autoboot is ON, variable: bootstrap:ir800-hv.srp.SPA.3.0.24
+Image signature verified
+Booting image bootstrap:ir800-hv.srp.SPA.3.0.24
+[   19.870251] kexec: Starting new kernel
+
+RIF heap (initial): 2774816 bytes
+RIF<3> Added 2774816 bytes at <0x2015a8e0> to the RIF heap
+RIF: Host RAM: 1467008KB required, 1467729KB available
+RIF: Host low RAM: 4808KB required, 1467729KB available
+RIF: Host RAM unused by memory regions: 721KB total, 721KB low
+Processing SRP...
+RIF: used 10568/16384 bytes of stack
+
+##############################################################
+
+   LynxSecure TRUNK (No Service Packs installed)
+   Copyright 2004-2016 Lynx Software Technologies, Inc
+   All rights reserved.
+
+   LynxSecure (x86_64) build ENGINEERING created on 01/27/2016 09:35:28
+   URL:         svn://txx.lynx.com/svn/lynxsecure/engr/psubramaniam/tot-20141010/lynxsecure/src
+   Revision(s): 11396M
+   Built by:    psubramaniam@paricos62.localdomain
+
+##############################################################
+
+   Initializing the Internal Timekeeping...
+   Initializing the System State Manager...
+   Initializing LynxSecure global data areas.
+   Number of CPU(s) : 2
+   Initializing the CPU Support Package.
+   Initializing LynxSecure page table...
+   Initializing the Board Support Package.
+   Initializing Scheduler...
+   Initializing the VCPU module...
+   Starting up the other CPUs...
+            CPUs online: #0 #1
+   Initializing Device Configuration Virtualization...
+   Initializing Subject Resources...
+LS<3> DCV: device SATA0 (00:17.0) doesn't support generic reset
+   Initializing Interrupt Routing...
+   Initializing Hypercalls...
+   Heap memory used by LynxSecure: 1766800 (0x1af590) bytes
+   Launching Subjects
+<3> [0.823980] IOAPIC: IOAPIC 1 initialized, implementation version 32
+<3> [0.823980] <E1000> e1000_device_init: initialized E1000 device
+<3> [0.823980] <E1000> e1000_device_init: initialized E1000 device
+<6> PCI: Initializing
+<6> PCI: Finished Initializing
+Autoboot string ir800-universalk9-mz.SPA.157-3.M1,12;
+
+Booting image: ir800-universalk9-mz.SPA.157-3.M1....   [Multiboot-elf, <0x11000
+0:0x9f62e4c:0x3cac48>, shtab=0xa43e2f8[csvds]:/ir800-universalk9-mz.SPA.157-3.M
+1... , entry=0x1100b0]
+[CU:0]
+Jumps to: 0x1100b0
+
+Smart Init is enabled
+smart init is sizing iomem
+                 TYPE      MEMORY_REQ
+    Onboard devices &
+         buffer pools      0x03644000
+-----------------------------------------------
+               TOTAL:      0x03644000
+
+Rounded IOMEM up to: 55MB.
+Using 12 percent iomem. [55MB/448MB]
+
+              Restricted Rights Legend
+
+Use, duplication, or disclosure by the Government is
+subject to restrictions as set forth in subparagraph
+(c) of the Commercial Computer Software - Restricted
+Rights clause at FAR sec. 52.227-19 and subparagraph
+(c) (1) (ii) of the Rights in Technical Data and Computer
+Software clause at DFARS sec. 252.227-7013.
+
+           cisco Systems, Inc.
+           170 West Tasman Drive
+           San Jose, California 95134-1706
+
+
+
+Cisco IOS Software, ir800 Software (ir800-UNIVERSALK9-M), Version 15.7(3)M1, RELEASE SOFTWARE (fc2)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2017 by Cisco Systems, Inc.
+Compiled Thu 30-Nov-17 03:40 by prod_rel_team
+
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+Cisco IR829GW-LTE-LA-QK9 (revision 2.0) with 365568K/60416K bytes of memory.Installed image archive
+
+Processor board ID FGL213893GW
+Last reset from CLI initiated reload
+
+FPGA version: 2.7.0
+
+BIOS: version 16 Production
+BIOS: date[YYYY/MM/DD] :[2017/8/21]
+
+MCU Bootloader : 28
+MCU Application: 33
+
+2 Serial(sync/async) interfaces
+7 Gigabit Ethernet interfaces
+9 terminal lines
+2 Cellular interfaces
+1 cisco Embedded AP (s)
+DRAM configuration is 72 bits wide with parity disabled.
+256K bytes of non-volatile configuration memory.
+976562K bytes of ATA System Flash (Read/Write)
+250000K bytes of ATA Bootstrap Flash (Read/Write)
+
+ transport preferred lat pad telnet rlogin lapb-ta mop udptn v120 ssh
+                         ^
+% Invalid input detected at '^' marker.
+
+ transport preferred lat pad telnet rlogin lapb-ta mop udptn v120 ssh
+                         ^
+% Invalid input detected at '^' marker.
+
+
+
+Press RETURN to get started!
+
+
+*Jan  2 00:00:00.595: %IOS_LICENSE_IMAGE_APPLICATION-6-LICENSE_LEVEL: Module name = ir800 Next reboot level = ipbasek9 and License = ipbasek9
+*Jan  2 00:00:00.667: %IOS_LICENSE_IMAGE_APPLICATION-6-LICENSE_LEVEL: Module name = ir800 Next reboot level = securityk9 and License = securityk9
+*Jan  2 00:00:00.745: %IOS_LICENSE_IMAGE_APPLICATION-6-LICENSE_LEVEL: Module name = ir800 Next reboot level = datak9 and License = datak9
+*Feb 26 12:42:01.581: CELLULAR: modem in slot 1 powered up
+
+*Feb 26 12:42:01.921: c3600_scp_set_dstaddr2_idb(185)add = 0 name is Wlan-GigabitEthernet0
+*Feb 26 12:42:14.873: %ACT2-5-STARTED: ACT2 process started.
+*Feb 26 12:42:14.995: %LINEPROTO-5-UPDOWN: Line protocol on Interface wlan-ap0, changed state to up
+*Feb 26 12:42:14.995: %LINK-3-UPDOWN: Interface GigabitEthernet5, changed state to up
+*Feb 26 12:42:14.995: %LINK-3-UPDOWN: Interface GigabitEthernet0, changed state to down
+*Feb 26 12:42:16.459: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan1, changed state to down
+*Feb 26 12:42:16.461: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet5, changed state to up
+*Feb 26 12:42:16.461: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0, changed state to down
+*Feb 26 12:42:20.965: %IGNITION-5-IGN_ENABLE_CMD: The Ignition Power Management is disabled
+*Feb 26 12:42:21.131: %WLAN_AP_INTF-6-NOCHANGE: Interface wlan-ap0, always stays up, to session into service-module
+*Feb 26 12:42:23.081: %LINK-5-CHANGED: Interface GigabitEthernet0, changed state to administratively down
+*Feb 26 12:42:23.095: %LINK-5-CHANGED: Interface GigabitEthernet5, changed state to administratively down
+*Feb 26 12:42:24.095: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet5, changed state to down
+*Feb 26 12:42:28.097: %SYS-5-CONFIG_I: Configured from memory by console
+*Feb 26 12:42:28.515: %SYS-5-RESTART: System restarted --
+Cisco IOS Software, ir800 Software (ir800-UNIVERSALK9-M), Version 15.7(3)M1, RELEASE SOFTWARE (fc2)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2017 by Cisco Systems, Inc.
+Compiled Thu 30-Nov-17 03:40 by prod_rel_team
+*Feb 26 12:42:28.617: %SYS-6-BOOTTIME: Time taken to reboot after reload =  176 seconds
+*Feb 26 12:42:28.629: %LINK-3-UPDOWN: Interface Async0, changed state to up
+*Feb 26 12:42:28.629: %LINK-3-UPDOWN: Interface Async1, changed state to up
+*Feb 26 12:42:28.653: %VPN_HW-6-INFO_LOC: Crypto engine: onboard 0  State changed to: Initialized
+*Feb 26 12:42:28.653: %VPN_HW-6-INFO_LOC: Crypto engine: onboard 0  State changed to: Enabled
+*Feb 26 12:42:28.665: %CRYPTO-6-ISAKMP_ON_OFF: ISAKMP is OFF
+*Feb 26 12:42:28.665: %CRYPTO-6-GDOI_ON_OFF: GDOI is OFF
+*Feb 26 12:42:28.665: %CRYPTO-6-ISAKMP_ON_OFF: ISAKMP is OFF
+*Feb 26 12:42:28.665: %CRYPTO-6-GDOI_ON_OFF: GDOI is OFF
+*Feb 26 12:42:28.665: %QAT15_CRYPTO-6-SELF_TEST_RESULT: Self test info: (Self test started.)
+*Feb 26 12:42:28.673: %QAT15_CRYPTO-6-SELF_TEST_RESULT: Self test info: (All Tests Passed)
+*Feb 26 12:42:28.673: %SYS-3-HARIKARI: Process IR800 Test top-level routine exited
+*Feb 26 12:42:30.099: %LINK-3-UPDOWN: Interface GigabitEthernet0, changed state to up
+*Feb 26 12:42:30.379: %LINK-3-UPDOWN: Interface Wlan-GigabitEthernet0, changed state to up
+*Feb 26 12:42:31.099: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1, changed state to down
+*Feb 26 12:42:31.169: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet2, changed state to down
+*Feb 26 12:42:31.237: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet3, changed state to down
+*Feb 26 12:42:31.311: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet4, changed state to down
+*Feb 26 12:42:31.379: %LINEPROTO-5-UPDOWN: Line protocol on Interface Wlan-GigabitEthernet0, changed state to up
+*Feb 26 12:42:32.399: %CRYPTO-6-ISAKMP_ON_OFF: ISAKMP is OFF
+*Feb 26 12:42:32.399: %CRYPTO-6-GDOI_ON_OFF: GDOI is OFF
+*Feb 26 12:42:33.693: %PNP-6-PNP_DISCOVERY_STOPPED: PnP Discovery stopped (Startup Config Present)
+*Feb 26 12:42:59.459: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan1, changed state to up
+*Feb 26 12:43:56.229: %IR800_ENV-3-IR800_VDS_HB_MISSED: IOS<->VDS communication channel missed 3 heartbeats
+*Feb 26 12:45:00.111: %CELLULAR-2-MODEM_UP: Cellular0 modem is now UP.
+*Feb 26 12:46:00.271: %CELLWAN-2-MODEM_RADIO: Cellular0 Modem radio has been turned on
+*Feb 26 12:46:27.703: %CELLWAN-2-BEARER_UP: Instance id=0, Default bearer (bearer_id=5) in Cellular0 is now UP
+*Feb 26 12:46:29.805: %LINK-3-UPDOWN: Interface Cellular0, changed state to up
+*Feb 26 12:46:30.805: %LINEPROTO-5-UPDOWN: Line protocol on Interface Cellular0, changed state to up
+*Feb 26 12:39:27.000: %SYS-6-CLOCKUPDATE: System clock has been updated from 12:46:38 UTC Mon Feb 26 2018 to 12:39:27 UTC Mon Feb 26 2018, configured from console by vty1.
+Feb 26 12:39:27.553: %PKI-4-NOCONFIGAUTOSAVE: Configuration was modified.  Issue "write memory" to save new IOS PKI configuration
+IR800>
+Feb 26 12:42:17.652: %SSH-5-ENABLED: SSH 1.99 has been enabled
+Feb 26 12:42:17.674: %PKI-6-PKCS12IMPORT_SUCCESS: PKCS #12 Successfully Imported.
+Feb 26 21:42:26.480 JST: %SYS-6-CLOCKUPDATE: System clock has been updated from 12:42:26 UTC Mon Feb 26 2018 to 21:42:26 JST Mon Feb 26 2018, configured from console by vty0.
+Feb 26 21:42:26.924 JST: %CRYPTO-6-ISAKMP_ON_OFF: ISAKMP is ON
+Feb 26 21:42:26.958 JST: %FLEXVPN-6-FLEXVPN_CONNECTION_DOWN: FlexVPN(ATOM_FLEXVPN) Client_public_addr = 100.66.129.70 Server_public_addr = 54.95.130.176
+Feb 26 21:42:27.520 JST: %LINEPROTO-5-UPDOWN: Line protocol on Interface Loopback1, changed state to up
+Feb 26 21:42:27.520 JST: %LINEPROTO-5-UPDOWN: Line protocol on Interface Tunnel1, changed state to down
+Feb 26 21:42:27.532 JST: %LINEPROTO-5-UPDOWN: Line protocol on Interface NVI0, changed state to up
+Feb 26 21:42:27.604 JST: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan1, changed state to down
+Feb 26 21:42:28.064 JST: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan100, changed state to down
+Feb 26 21:42:28.702 JST: %LINK-3-UPDOWN: Interface GigabitEthernet5, changed state to up
+Feb 26 21:42:29.760 JST: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet5, changed state to up
+Feb 26 21:42:38.955 JST: %IOX-6-SOCK_CONNECT: Received socket connection request from IOX Client
+Feb 26 21:42:40.963 JST: %IOX-6-SOCK_MESSAGE: Received IOX_REQUEST message with opcode IOX_REQUEST_REGISTER from IOX Client
+Feb 26 21:42:41.819 JST: %IOX-6-SOCK_MESSAGE: Received IOX_REQUEST message with opcode IOX_REQUEST_GET_TIME from IOX Client
+Feb 26 21:42:44.456 JST: %IOX-6-SOCK_CONNECT: Received socket connection request from IOX Client
+Feb 26 21:42:44.456 JST: %IOX-6-SOCK_MESSAGE: Received IOX_REQUEST message with opcode IOX_REQUEST_REGISTER from IOX Client
+.Feb 26 21:42:44.834 JST: %IOX-6-SOCK_MESSAGE: Received IOX_REQUEST message with opcode IOX_REQUEST_GET_PROTECT_KEY from IOX Client
+.Feb 26 21:42:45.042 JST: %IOX-6-SOCK_SEND: Sending IOX_REQUEST_RESPONSE resp with opcode IOX_REQUEST_GET_PROTECT_KEY to IOX Client
+Feb 26 21:42:49.627 JST: %IOX-6-SOCK_MESSAGE: Received IOX_REQUEST message with opcode IOX_REQUEST_GET_PROTECT_KEY from IOX Client
+Feb 26 21:42:49.833 JST: %IOX-6-SOCK_SEND: Sending IOX_REQUEST_RESPONSE resp with opcode IOX_REQUEST_GET_PROTECT_KEY to IOX Client
+Feb 26 21:42:57.361 JST: %LINEPROTO-5-UPDOWN: Line protocol on Interface Tunnel1, changed state to up
+Feb 26 21:42:57.363 JST: %FLEXVPN-6-FLEXVPN_CONNECTION_UP: FlexVPN(ATOM_FLEXVPN) Client_public_addr = 100.66.129.70 Server_public_addr = 54.95.130.176
+Feb 26 21:43:19.635 JST: %IOX-6-HEARTBEAT_TIMER_EXPIRED: IOX Heartbeat timer expired.
+
+AToM-IR829#show pnp profile
+PnP Profiles: Active:1, Created:1, Deleted:0, Hidden:0
+
+Name            CBType Node     Primary-Path           Primary-Trans  Backup-Trans
+network-pnp     User   visible  pnp/WORK-REQUEST       HTTPS          none      
+
+
+Initiator Profile network-pnp: 1 open connections: 0 closing connections
+        Encap: pnp
+        WSSE header is not required. Configured authorization level is 1
+        SID:[0208b356-d05e-46d8-8dc8-1fb684f866d1], LastSID:[-], ChangedCount:1, SIDAuthOnly:No, MustValidate:No, MustRenew:No
+        Work-Request Tracking: Validation Yes, Total 14, SID=[0208b356-d05e-46d8-8dc8-1fb684f866d1], Violation 0, PSR 0, PSB 0
+                Pending-WR: X/M/R=12/1/0, UDI=[PID:IR829GW-LTE-LA-QK9,VID:V02,SN:FGL213893GW], SID=[0208b356-d05e-46d8-8dc8-1fb684f866d1], Correlator=[CiscoPnP-1.0-18-103-14C1D118-15]
+                Last-WR: X/M/R=1/1/0, UDI=[PID:IR829GW-LTE-LA-QK9,VID:V02,SN:FGL213893GW], SID=[0208b356-d05e-46d8-8dc8-1fb684f866d1], Correlator=[CiscoPnP-1.0-17-103-14C1CDA8-14]
+        PnP Request Tracking: Current:[backoff], Last:[cli-exec], First:[device-authentication]
+                Total:14, OK:14, Failed:0, LastFailed:[-]
+        PnP Response Tracking: Retry-Allowed 0, Total 0
+                Last-PR: X/M/R=0/1/0, UDI=[PID:IR829GW-LTE-LA-QK9,VID:V02,SN:FGL213893GW], SID=[0208b356-d05e-46d8-8dc8-1fb684f866d1], Correlator=[CiscoPnP-1.0-18-103-14C1D118-15]
+        PnP Backoff Time Tracking: Default 60, Current 172800, Last 60, First:60, OK:3, Failed:0
+        Countdown: Security Unlock: S=3/F=0/T=2841, Service Lock: S=3/F=0/T=172071, Service Req Wait: S=0/F=0/T=51, Prxoy Req Wait S=163/F=0/T=5, Service Resp Ack: S=14/F=0/T=0
+        Max message (RX) is 50 Kbytes
+        XEP Faults are sent
+        Idle timeout infinite
+        Keepalive not configured
+        Reconnect time 60 seconds
+        Primary Transport:https to Host:-, IP:211.128.103.213, Port:443, Src-Intf:-, VRF:-, URL pnp/WORK-REQUEST
+  Connected to the primary transport via https
+
+  Remote connection via HTTP client.  URL https://211.128.103.213:443/pnp/WORK-REQUEST, post
+  Established at 21:39:28.943 JST Mon Feb 26 2018
+         Tx 17124 bytes (28 msg), Tx 0 errors,
+         Last message sent at 21:42:54.547 JST Mon Feb 26 2018
+         Rx 8697 bytes (28 msg), 0 empty msg
+         Last message received at 21:42:54.837 JST Mon Feb 26 2018
+
+Statistics for profile network-pnp
+        incoming total 28, bad XML 0, authentication errors 0, oversized 0
+        outgoing total 28, absorbed 0
+        message internal errors 14
+  Connection Accepts 1, local hangup 0, remote hangup 0, keepalive hangup 0
+        session internal errors 0, continuous faults 0, total faults 0
+
+AToM-IR829#
